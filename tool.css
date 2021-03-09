@@ -1,0 +1,348 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*MY CODE BEGINS*/
+@font-face {
+    font-family: myFirstFont;
+    src: url("../fonts/mira.ttf");
+}
+@font-face {
+    font-family: cl;
+    src: url("../fonts/cl.ttf");
+}
+@font-face {
+    font-family: mummy;
+    src: url("../fonts/mummy.ttf");
+}
+
+@font-face {
+    font-family: lobster;
+    src: url("../fonts/lobster.otf");
+}
+#container {
+background-color:black;
+text-align: center;
+width: 100%;
+padding: 0;
+
+}
+#topNav {
+text-align:left;
+min-width: 100%;
+max-width: 100%;
+margin-top:-10px;
+padding: 3%;
+font-family: Monoton;
+font-size: 2em;
+background: rgb(0,0,0); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(41,154,11,1) 22%, rgba(41,154,11,1) 81%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(22%,rgba(41,154,11,1)), color-stop(81%,rgba(41,154,11,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(41,154,11,1) 22%,rgba(41,154,11,1) 81%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(41,154,11,1) 22%,rgba(41,154,11,1) 81%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(41,154,11,1) 22%,rgba(41,154,11,1) 81%,rgba(0,0,0,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(41,154,11,1) 22%,rgba(41,154,11,1) 81%,rgba(0,0,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+height: 90%;
+margin:0;
+color: black;
+text-shadow: 2px 2px gray;
+}
+#caption {
+position: absolute;
+
+font-size: 0.45em;
+padding: 3%;
+font-family: "Rock Salt";
+margin-top: -41px;
+margin-left:0;
+color: white;
+text-shadow: 1px 1px #000000;
+line-height: 105px;
+}
+#divSet{
+position: relative;
+margin-top: 35px;
+margin-left: 5px;
+width: 97%;
+height: 600px;
+border: 1px solid black;
+background: rgb(0,0,0); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(13,207,19,1) 51%, rgba(13,207,19,1) 54%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(51%,rgba(13,207,19,1)), color-stop(54%,rgba(13,207,19,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(13,207,19,1) 51%,rgba(13,207,19,1) 54%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(13,207,19,1) 51%,rgba(13,207,19,1) 54%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(13,207,19,1) 51%,rgba(13,207,19,1) 54%,rgba(0,0,0,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(13,207,19,1) 51%,rgba(13,207,19,1) 54%,rgba(0,0,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+border-radius: 0%;
+overflow-y: scroll;
+
+}
+.cmdBtns{
+position: relative;
+margin-top: 20px;
+margin-left: 5px;
+width: 75px;
+height: 75px;
+border: 1px solid white;
+background: black;
+border-radius: 20%;
+z-index: 99999;
+display: inline-block;
+}
+#home{
+background: url(home.png);
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+#on{
+background: url(on.png);
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+#off{
+background: url(off.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+#signIn{
+background: url(login.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+#ctp{
+background: url(ctp.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+#person1{
+background: url(P1.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+#person2{
+background: url(P2.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+#person3{
+background: url(P3.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+#pr1{
+background: url(pr1.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+#pr2{
+background: url(pr2.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+#pr3{
+background: url(pr3.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+#volUp{
+background: url(volup.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+#signOut{
+background: url(signout.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+#volDown{
+background: url(voldown.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+#mute{
+background: url(mute.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+#unmute{
+background: url(unmute.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+}
+
+#muteMic{
+background: url(micoff.jpg);
+background-color: white;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+border: 2px solid black;
+}
+
+#netflix{
+background: url(netflix.png);
+background-color: white;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+border: 2px solid black;
+}
+#huluPlus{
+background: url(huluPlus.png);
+background-color: white;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+border: 2px solid black;
+}
+#skype{
+background: url(skype.png);
+background-color: white;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+border: 2px solid black;
+}
+#settings{
+background: url(settings.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+border: 2px solid black;
+}
+#goBack{
+background: url(back.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+border: 2px solid black;
+}
+#snap{
+background: url(snap.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+border: 2px solid black;
+}
+#unsnap{
+background: url(snap.png);
+background-color: gray;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+border: 2px solid black;
+}
+#down{
+background: url(down.png);
+background-color: white;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+border: 2px solid black;
+}
+#yes{
+background: url(yes.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+border: 2px solid black;
+}
+#no{
+background: url(no.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+border: 2px solid black;
+}
+#select{
+background: url(select.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+border: 2px solid black;
+}
+#addMore{
+background: url(addMore.png);
+background-color: black;
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+border: 2px solid black;
+}
